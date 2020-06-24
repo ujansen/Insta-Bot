@@ -219,12 +219,12 @@ class InstaBot:
         self.driver.find_element_by_xpath('//button[contains(text(), "Log Out")]').click()
                                      
 ib = InstaBot()
-ib.login('udtrialbot', 'Insta@123')
+ib.login('ENTER USERNAME HERE', 'ENTER PASSWORD HERE')
 ib.check_stories()
-ib.find_unfollowers('udtrialbot')
-#ib.search_follow('barelyexists')
-#ib.find_unfollowers('udtrialbot')
+ib.find_unfollowers('USERNAME')
+#ib.search_follow('USERNAME OF ACCOUNT TO FOLLOW')
+#ib.find_unfollowers('USERNAME')
 #ib.homepage()
-#ib.logout('udtrialbot')
-#ib.send_message('queenalien.u', 'Hello, from the other side?')
+#ib.logout('USERNAME')
+#ib.send_message('USERNAME OF ACCOUNT TO DM', 'MESSAGE')
 
