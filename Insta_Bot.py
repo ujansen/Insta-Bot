@@ -23,6 +23,12 @@ class InstaBot:
         sleep(1)
         self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
             .click()
+        
+    # Goes to the homepage
+    def homepage(self):
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[1]/a/div/div/img')\
+            .click()
             
     # Searches for an account and opens their account
     def search(self, username):
@@ -139,12 +145,6 @@ class InstaBot:
         self.following_list = set(self.following_list)
         self.unfollower_list = self.following_list- self.follower_list
         print(self.unfollower_list)
-        
-    # Goes to the homepage
-    def homepage(self):
-        sleep(1)
-        self.driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[1]/a/div/div/img')\
-            .click()
      
         
     # Sends a message to any account
